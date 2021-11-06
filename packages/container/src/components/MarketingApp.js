@@ -2,7 +2,7 @@ import React, {useRef, useEffect} from 'react'
 import { useHistory } from 'react-router-dom'
 import {mount} from 'marketing/MarketingApp'
 
-export default () => {
+const MarketingApp = () => {
     const ref = useRef(null)
     const history = useHistory()
 
@@ -25,3 +25,5 @@ export default () => {
         <div ref={ref}></div>
     )
 }
+
+export default MarketingApp
